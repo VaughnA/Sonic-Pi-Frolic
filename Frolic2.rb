@@ -9,6 +9,15 @@ z=[ 1, 0.75, 0.25, 1, 0.75, 0.25, 0.75, 0.25, 1, 0.75, 0.25, 0.75, 0.25, 1, 0.75
 v=[ :C3, :g2, :g2, :g2, :b2, :fs2, :b2, :bb2, :f2, :bb2, :f2, :a2, :e2]
 n=[ 2, 2, 2, 2, 2, 4, 1, 2, 2, 2, 2, 2, 2]
 
+1.times do
+  play :G2
+  sleep 1
+  play :A2
+  sleep 1
+  play :B2
+  sleep 1
+end
+
 live_loop :Con do
   i=0
   40.times do
