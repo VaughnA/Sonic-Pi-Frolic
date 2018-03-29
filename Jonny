@@ -1,0 +1,24 @@
+use_bpm 147
+guitar = "C:/Users/vaughn_arjavac/Desktop/No drums.wav"
+snare = "C:/Users/vaughn_arjavac/Desktop/Vaughn Snares.wav"
+crashes = "C:/Users/vaughn_arjavac/Desktop/Vaughn Crashes.wav"
+kick = "C:/Users/vaughn_arjavac/Desktop/Vaughn Kicks Full.wav"
+
+
+define :full do
+  sample snare
+  sleep 1
+  sample crashes
+  sleep 0.5
+  sample kick
+end
+
+define :start do |n|
+  sample n
+  sleep 36
+end
+
+start guitar
+full
+
+
